@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 25px;
+}
+
+i {
+    font-style: normal;
+    color: grey;
+    font-size: 35px;
+}
+
+b{
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-color: #FF5757;
+}
+
+body {
+    background: black;
+}
+
+h1 {
+    margin: 50px 0px;
+    font-size: 35px;
+    color: #bd4040;
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1900px;
+    height: 100vh;
+    background: url(../img/bg.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    max-height: 1000px;
+}
+
+
+/* SCROLL  */
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+}
+
+.scroll:hover {
+    opacity: 0.8;
+}
+
+.scroll img {
+    width: 50px;
+    height: auto;
+}
+
+/* 1ere PAGE */
+
+.container-header {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100vh;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.logo img{
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li{
+    margin: 20px;
+}
+
+.navbar li>a{
+    text-decoration: none;
+    
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar li>:hover{
+    color: #FF5757;
+}
+
+.en-tete {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.en-tete h1{
+    font-size: 55px;
+    margin: 0px;
+    text-shadow: 2px 2px 5px #3b16164f;
+    text-decoration: none;
+    color: white;
+}
+
+.en-tete h2{
+    font-size: 30px;
+    color: #bd4040;
+    text-shadow: 2px 2px 5px #662525b6;
+}
+
+.en-tete h3{
+    color: black;
+}
+
+
+/* PORTRAIT */
+
+.container-portrait {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100vh;
+    position: relative;
+    max-height: 1000px;
+}
+
+.grille-portrait {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.text-portrait {
+    padding-right: 35px;
+    
+}
+
+.text-portrait h1 {
+    margin: 50px 0px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.img-portrait img{
+    float: right;
+    width: 80%;
+    height: auto;
+}
+
+
+/* SKILLS */
+
+
+.container-skills {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100vh;
+    position: relative;
+    max-height: 1000px;
+}
+
+.grille-skills {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.list-skills h1 {
+    margin: 50px 0px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.text-skills {
+    padding: 75px 0px 0px 35px;
+}
+
+
+.language-skills {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.language-skills a{
+    font-size: 35px;
+    color: #FF5757;
+}
+
+.outils-skills {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.outils-skills a{
+    font-size: 35px;
+    color: #FF5757;
+}
+
+
+/* EXPERIENCE */
+
+.container-experiences {
+    width: 65%;
+    margin: auto auto;
+    max-width: 1300px;
+    height: 100vh;
+    max-height: 1000px;
+    position: relative;
+}
+
+.grille-experiences {
+    height: 80%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.experiences-grid{
+    height: 100%;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: 10% 10% 10%;
+    row-gap: 4px;
+    grid-template-areas: 
+    "h2 text"
+    "h3 text"
+    "h4 text";
+}
+
+.experiences-grid>p{
+    grid-area: text;
+}
+
+.experiences-grid>h2,h3,h4{
+    text-align: center;
+}
+.experiences-grid>h2{
+    grid-area: h2;
+    text-decoration: underline;
+    color: #FF5757;
+}
+.experiences-grid>h3{
+    grid-area: h3;
+    color: rgb(107, 107, 107);
+}
+.experiences-grid>h4{
+    grid-area: h4;
+    color:rgb(107, 107, 107);
+}
