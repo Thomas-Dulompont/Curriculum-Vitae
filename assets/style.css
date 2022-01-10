@@ -89,8 +89,8 @@ header {
 .container-header {
     width: 65%;
     margin: 0 auto;
-    max-width: 1300px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
 }
 
 nav {
@@ -163,7 +163,8 @@ nav {
     width: 65%;
     margin: 0 auto;
     max-width: 1300px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     position: relative;
     max-height: 1000px;
 }
@@ -200,7 +201,8 @@ nav {
     width: 65%;
     margin: 0 auto;
     max-width: 1300px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     position: relative;
     max-height: 1000px;
 }
@@ -257,8 +259,8 @@ nav {
     width: 65%;
     margin: auto auto;
     max-width: 1300px;
-    height: 100vh;
-    max-height: 1000px;
+    min-height: 100vh;
+    max-height: max-content;
     position: relative;
 }
 
@@ -310,7 +312,8 @@ nav {
     width: 65%;
     margin: 0 auto;
     max-width: 1300px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     position: relative;
     max-height: 1000px;
     display: flex;
