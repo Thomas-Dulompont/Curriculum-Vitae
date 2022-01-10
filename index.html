@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
 
-    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <title>DLMP - Developpeur, Intégrateur Web Junior</title>
 
 </head>
 <body>
-    <header>
+    <button onclick="topFunction()" id="buttontop" title="Haut de page"><img src="./img/up-arrow.png" alt="Image fleche pour button top"></button>
+
+    <header id="top">
         <div class="container-header">
             <nav>
                 <div class="logo">
@@ -57,7 +61,7 @@
     <div id="skills" class="container-skills">
         <div class="grille-skills">
             <div class="list-skills">
-                <h1>COMPETENCES</h1>
+                <h1>SKILLS</h1>
                 <div class="language-skills">
                     <span>HTML</span>
                     <span><a class="star">★★★★<i>★</i></a></span>
@@ -118,5 +122,66 @@
         </div>
     </div>
 
+
+    <div id="contact" class="container-contact">
+        <div class="grille-contact">
+            <h1>CONTACT</h1>
+            <div class="contact-element">
+                <div class="contact-icon-img">
+                    <a href="mailto:thomasdulompont@gmail.com"><img src="img/mail.png" alt="Image mail site web contact"></a>
+                </div>
+                <a>thomasdulompont.1@gmail.com</a>
+            </div>
+            <div class="contact-element">
+                <div class="contact-icon-img">
+                    <a href="https://www.linkedin.com/in/thomas-dulompont-087544228/"><img src="img/linkedin.png" alt="Image linkedin site web contact"></a>
+                </div>
+                <a href="https://www.linkedin.com/in/thomas-dulompont-087544228/">thomas-dulompont-087544228</a>
+            </div>
+            <div class="contact-element">
+                <div class="contact-icon-img">
+                    <a href="https://goo.gl/maps/RLUpmaPQgKeQSKvNA"><img src="img/map.png" alt="Image map site web contact"></a>
+                </div>
+                <a href="https://goo.gl/maps/RLUpmaPQgKeQSKvNA">Valenciennes - Nord (59)</a>
+            </div>
+            <div class="contact-element">
+                <div class="contact-icon-img">
+                    <a href="https://thomasdlmp.fr/"><img src="img/link.png" alt="Image lien site web contact"></a>
+                </div>
+                <a href="https://thomasdlmp.fr/">thomasdlmp.fr</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>Thomas DLMP - 2022</p>
+    </footer>
+
+
+
+
+    <!-- SCRIPT POUR BUTTON TOP -->
+
+    <script>
+        var buttontop = document.getElementById("buttontop");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            buttontop.style.display = "block";
+          } else {
+            buttontop.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- FIN DU SCRIPT -->
 </body>
 </html>

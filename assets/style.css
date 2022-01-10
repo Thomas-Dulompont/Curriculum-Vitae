@@ -66,6 +66,24 @@ header {
     height: auto;
 }
 
+/* TOP */
+
+.top {
+    position: absolute;
+    left: 90%;
+    bottom: 25px;
+    transform: translateX(-50%);
+}
+
+.top:hover {
+    opacity: 0.8;
+}
+
+.top img {
+    width: 50px;
+    height: auto;
+}
+
 /* 1ere PAGE */
 
 .container-header {
@@ -101,10 +119,13 @@ nav {
     
     font-weight: bold;
     letter-spacing: 1px;
+    transition: 0.3s;
+    text-shadow: 2px 2px 5px #3b16164f;
 }
 
 .navbar li>:hover{
     color: #FF5757;
+    transition: 0.3s;
 }
 
 .en-tete {
@@ -275,3 +296,85 @@ nav {
     grid-area: h4;
     color:rgb(107, 107, 107);
 }
+
+
+/* CONTACT */
+
+.container-contact {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100vh;
+    position: relative;
+    max-height: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-element {
+    margin: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-element>a{
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+.contact-element>a:hover{
+    opacity: 0.8;
+}
+
+.contact-icon-img img{
+    width: 90px;
+    height: auto;
+}
+
+.contact-icon-img img:hover{
+    opacity: 0.8;
+}
+
+.grille-contact {
+    height: max-content;
+}
+
+
+footer>p {
+    color: rgb(68, 68, 68);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+
+/* BUTTON TOP */
+
+#buttontop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #bd4040;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #buttontop:hover {
+    opacity: 0.8;
+  }
+
+
+#buttontop img{
+    width: 32px;
+    height: auto;
+  }
