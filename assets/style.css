@@ -75,7 +75,7 @@ header {
     transform: translateX(-50%);
 }
 
-.top:hover {
+.top img:hover {
     opacity: 0.8;
 }
 
