@@ -94,9 +94,14 @@ header {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    align-self: flex-start;
 }
 
 .logo img{
@@ -164,6 +169,7 @@ nav {
 }
 
 .grille-portrait {
+    height: max-content;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
@@ -367,14 +373,106 @@ footer>p {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
+}
   
-  #buttontop:hover {
+#buttontop:hover {
     opacity: 0.8;
-  }
+}
 
 
 #buttontop img{
     width: 32px;
     height: auto;
-  }
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1300px)
+{
+    .logo {
+        display: none;
+    }
+    nav {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .en-tete {
+        margin-top: 25%;
+    }
+    .en-tete h1{
+        font-size: 45px;
+    }
+    .en-tete h2{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    .experiences-grid {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .grille-experiences>h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .scroll {
+        display: none;
+    }
+    .grille-portrait {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .img-portrait {
+        display: none;
+    }
+    .text-portrait {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .grille-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .language-skills {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .outils-skills {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grille-contact>h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .container-contact {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact-element {
+        display: block;
+    }
+    .contact-element>a{
+        display: none;
+    }
+}
