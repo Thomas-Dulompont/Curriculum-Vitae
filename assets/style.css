@@ -10,12 +10,6 @@
     font-size: 25px;
 }
 
-i {
-    font-style: normal;
-    color: grey;
-    font-size: 35px;
-}
-
 b{
     font-weight: normal;
     text-decoration: underline;
@@ -45,6 +39,7 @@ header {
     background-size: cover;
     position: relative;
     max-height: 1000px;
+    z-index: 10001;
 }
 
 
@@ -276,7 +271,7 @@ nav {
     display: grid;
     column-gap: 20px;
     grid-template-columns: 30% 65%;
-    grid-template-rows: 10% 10% 10%;
+    grid-template-rows: repeat(3, 25px);
     row-gap: 4px;
     grid-template-areas: 
     "h2 text"
@@ -362,46 +357,64 @@ footer>p {
 
 /* BUTTON TOP */
 
-#buttontop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
+.sticky-test {
+    bottom: 50px;
     right: 50px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #bd4040;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
+    background-color:transparent;
+    width: max-content;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 10000;
+    float: right;
 }
-  
-#buttontop:hover {
+
+.sticky-test img{
+    padding: 15px;
+    border-radius: 5px;
+    width: 32px;
+    height: auto;
+    background:#FF5757;
+}
+
+.sticky-test:hover {
     opacity: 0.8;
 }
 
+/* NAVBAR BURGER */
 
-#buttontop img{
-    width: 32px;
-    height: auto;
+#check {
+    display: none;
 }
 
+.button-burger {
+    display: none;
+}
 
+.button-burger i{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1300px)
+{
+    .button-burger{
+        display: block;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -1000%;
+        text-align: center;
+        transition: all .5s;
+    }
+}
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 1300px)
 {
-    .logo {
-        display: none;
-    }
-    nav {
-        margin-top: 30px;
-        justify-content: center;
-    }
-
     .en-tete {
         margin-top: 25%;
     }
