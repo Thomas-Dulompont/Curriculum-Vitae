@@ -357,7 +357,7 @@ footer>p {
 
 /* BUTTON TOP */
 
-.sticky-test {
+.button-top {
     bottom: 50px;
     right: 50px;
     background-color:transparent;
@@ -368,7 +368,7 @@ footer>p {
     float: right;
 }
 
-.sticky-test img{
+.button-top img{
     padding: 15px;
     border-radius: 5px;
     width: 32px;
@@ -376,22 +376,34 @@ footer>p {
     background:#FF5757;
 }
 
-.sticky-test:hover {
+.button-top:hover {
     opacity: 0.8;
 }
 
 /* NAVBAR BURGER */
 
-#check {
-    display: none;
-}
-
 .button-burger {
     display: none;
+    cursor: pointer;
 }
 
 .button-burger i{
     font-size: 40px;
+    transition: 0.5s;
+}
+
+.button-burger>i:hover {
+    color: #FF5757;
+    transition: 0.5s;
+}
+
+
+.close>i {
+    font-size: 50px;
+}
+
+#check{
+    display: none;
 }
 
 @media screen and (max-width: 1300px)
@@ -403,11 +415,19 @@ footer>p {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
-        top: 80px;
+        background: #471b1b;
+        top: 0px;
         left: -1000%;
         text-align: center;
         transition: all .5s;
+        z-index: 10100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #check:checked ~ .navbar{
+        left: 0px;
     }
 }
 
