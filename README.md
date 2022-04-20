@@ -2,7 +2,7 @@
 
 ## Contenu du projet
 
-Dans ce dépot Git retrouvez mon CV en format HTML
+Dans ce dépot Git retrouvez mon CV en format Web !
 
 ## Les objectifs
 
